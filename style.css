@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,800&family=Roboto:wght@400;700&family=Ubuntu:wght@300&family=Varela+Round&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(77, 138, 191);
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    list-style-type: none;
+    background-color: rgb(27, 27, 27);
+    height: 60px;
+    color: white;
+    font-size: 18px;
+}
+nav ul li{
+    padding-right: 10px;
+}
+.brand-logo{
+    display: flex;
+    align-items: center;
+}
+.brand-logo img{
+    width: 45px;
+    padding: 0px 6px;
+}
+.brand-logo span{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.5rem;
+    font-weight: larger;
+    padding-right: 10px;
+}
+.container{
+    min-height: 74vh;
+    width: 70%;
+    background-color: black;
+    color: white;
+    margin: 30px auto;
+    border-radius: 12px;
+    padding: 32px;
+    background-image: url('Asset/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    font-size: 18px;
+    font-family: 'Varela Round', sans-serif;
+}
+.songItem{
+    height: 50px;
+    width: 45%;
+    margin: 20px 0;
+    background-color: rgb(211, 200, 200);
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 32px;
+    padding: 0 22px;
+}
+.songItem img{
+    width: 10%;
+    margin: 5px 0;
+    border-radius: 34px;
+}
+.timeStamp i{
+    padding-left: 8px;
+    cursor: pointer;
+}
+.bottom{
+    background-color: rgb(31, 29, 29);
+    color: white;
+    height: 80px;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.bottom input{
+    width: 60%;
+    margin-bottom: 5px;
+}
+.icons{
+    cursor: pointer;
+}
+.songInfo{
+    position: absolute;
+    left: 40vh;
+    margin-top: 12px;
+}
+.songInfo img{
+    width: 72px;
+    padding-right: 8px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+.gif{
+    opacity: 0;
+}
